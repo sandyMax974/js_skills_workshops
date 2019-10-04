@@ -1,5 +1,6 @@
 # learning_1
-something
-01/10/2019 - second commit
-01/10/2019 - commit via terminal <br/>
-02/10/2019 
+My first commit with help<br/>
+01/10/2019 <br/> My second commit with help<br/>
+02/10/2019 <br/> My first commit alone<br/>
+03/10/2019 <br/> Commited a exercise snippet "Stand in Line"<br/>
+04/10/2019 <br/> My second commit alone<br/>
