@@ -1,5 +1,3 @@
-//Understanding how to use "switch" function
-
 function caseInSwitch(val) {
   var answer = "";
   // Only change code below this line
