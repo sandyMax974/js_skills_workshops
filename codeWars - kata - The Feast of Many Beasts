@@ -1,0 +1,13 @@
+function feast(beast, dish) {
+
+var dishFirstLetter = dish[0]
+var dishLastLetter = dish[dish.length-1]
+var beastFirstLetter = beast[0]
+var beastLastLetter = beast[beast.length-1]
+
+if (dishFirstLetter === beastFirstLetter && dishLastLetter === beastLastLetter){
+	return true
+} else {
+	return false
+}};
+feast("brown bear", "bear clar");
