@@ -1,0 +1,11 @@
+//Sum all the numbers of the array except the highest and the lowest element. If array is empty, null or None, or if only 1 Element exists, return 0
+
+function sumArray(array) {
+  if (Array.isArray(array) && array !== 'null' && array.length > 1) {
+    var ordArray = array.sort((a, b) => {return b - a});
+    ordArray.pop();
+    ordArray.shift();
+    return ordArray.reduce((acc, currVal) => {return acc + currVal}, 0);
+  } else { 
+    return 0
+}};
