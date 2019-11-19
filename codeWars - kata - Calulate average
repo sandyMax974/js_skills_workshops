@@ -1,0 +1,4 @@
+function find_average(array) {
+  var sumOfArray = array.reduce((acc, currVal) => {return acc + currVal})
+  return sumOfArray / array.length;
+}
