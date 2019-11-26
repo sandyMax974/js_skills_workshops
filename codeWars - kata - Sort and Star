@@ -13,11 +13,10 @@ function twoSort(s) {
   })*/
 
   s.sort((a, b) => {
-    return a.localeCompare(b, {co: true}, {sensitivity: 'variant'})
+    return a.localeCompare(b)
     });
-  //try nested loop and localeCompare
 
-  let firstStr = s.shift();
+  let firstStr = s[0];
   let firstStrArr = firstStr.split('');
   console.log(firstStrArr)
 
