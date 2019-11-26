@@ -1,0 +1,15 @@
+//not finished
+
+function lookUpProfile(name, prop) {
+  var contactNameFound = false
+  for (i = 0; i < contacts.length - 1; i++) {
+    var contact = contacts[i];
+    if (contact.firstName == name) {
+      contactNameFound = true;
+      if (contact.prop) {
+        return contact.prop;
+      }
+    }
+  } 
+  return "No such contact"
+}
