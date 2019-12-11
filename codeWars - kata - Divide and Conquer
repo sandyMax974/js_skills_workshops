@@ -1,4 +1,4 @@
-// correct code
+//method_1 - with 'if'
 function divCon(x){
   let number = 0;
   let str = 0;
@@ -14,15 +14,14 @@ function divCon(x){
   return number - str
 }
 
-//trying to refine
+//method_2 - with ternary expression
 function divCon(x){
   let number = 0;
   let str = 0;
 
   for (let i = 0; i < x.length; i++){
-    return typeof x[i] =='number' ? number += x[i]
-          : newInt = Number(x[i])
-            str += newInt
+      typeof x[i] =='number' ? number += x[i]
+      : str += Number(x[i])
     }
    return number - str
 } 
