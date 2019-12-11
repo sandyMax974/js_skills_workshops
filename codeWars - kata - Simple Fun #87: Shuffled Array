@@ -1,1 +1,6 @@
-
+sum array 
+divide by 2
+store that in varX
+find indexOf varX
+remove varX using arr.splice()
+use compare and sort the array
