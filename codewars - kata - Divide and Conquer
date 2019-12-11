@@ -1,0 +1,32 @@
+// correct code
+function divCon(x){
+  let number = 0;
+  let str = 0;
+
+  for (let i = 0; i < x.length; i++){
+    if (typeof x[i] == 'number'){
+    number = number += x[i] 
+    } else {
+      let newInt = Number(x[i]);
+      str += newInt;
+    }
+  }
+  return number - str
+}
+
+//trying to refine
+function divCon(x){
+  let number = 0;
+  let str = 0;
+
+  for (let i = 0; i < x.length; i++){
+    return typeof x[i] =='number' ? number += x[i]
+          : newInt = Number(x[i])
+            str += newInt
+    }
+   return number - str
+} 
+
+ 
+
+divCon(['5', '0', 9, 3, 2, 1, '9', 6, 7])
