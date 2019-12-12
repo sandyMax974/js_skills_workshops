@@ -15,3 +15,17 @@ function xyz (array) {
 	array.splice(indexValRemove, 1)
 	return array.sort()
 } 
+
+//draft code
+function shuffledArray(shuffled) {
+  let summedArr = shuffled.reduce((acc, current) => {
+    return acc += current
+  })
+  let valToRemove = summedArr /2
+  let indexValToRemove = shuffled.indexOf(valToRemove)
+  console.log(indexValToRemove)
+  let newArr = shuffled.splice(indexValToRemove, 1).sort()
+  return newArr
+}
+
+shuffledArray([1, 12, 3, 6, 2])
