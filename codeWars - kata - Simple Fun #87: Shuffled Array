@@ -4,3 +4,14 @@ store that in varX
 find indexOf varX
 remove varX using arr.splice()
 use compare and sort the array
+
+//sudocode
+function xyz (array) {
+	let arrSum = array.reduce((acc, current) => {
+		return acc + current
+		} 
+	let valRemove = arrSum / 2
+	let indexValRemove = array.indexof('valRemove')
+	array.splice(indexValRemove, 1)
+	return array.sort()
+} 
