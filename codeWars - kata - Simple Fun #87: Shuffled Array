@@ -29,3 +29,17 @@ function shuffledArray(shuffled) {
 }
 
 shuffledArray([1, 12, 3, 6, 2])
+
+//working code
+function shuffledArray(shuffled) {
+  let summedArr = shuffled.reduce((acc, current) => {
+    return acc += current
+  })
+  let valToRemove = summedArr /2
+  let indexValToRemove = shuffled.indexOf(valToRemove)
+  shuffled.splice(indexValToRemove, 1)
+  shuffled.sort()
+  return shuffled
+}
+
+shuffledArray([1, -3, -5, 7, 2])
