@@ -34,6 +34,5 @@ function shuffledArray(shuffled) {
   shuffled.splice(shuffled.indexOf(shuffled.reduce((acc, current) => {
     return acc += current
   })/2), 1)
-  shuffled.sort((a, b) => a - b)
-  return shuffled
+  return shuffled.sort((a, b) => a - b)
 }
