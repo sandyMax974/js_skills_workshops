@@ -1,0 +1,11 @@
+for one day plantHign is plantHeigh + upSpeed
+for one night plantHigh is plantHeight - downSpeed
+
+desiredHeight = days *= upSpeed - day *= downSpeed
+
+
+let i = 0;
+do {
+	i += upSpeed -= downSpeed
+}
+while (i == desiredHeigth); 
