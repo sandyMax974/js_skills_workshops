@@ -12,3 +12,16 @@ look for middle value index in original array*/
 /*let ordArr = arr.sort((a,b)=> a-b)  //order the array without modifying the original array
 var middle = arr[1]  //exract middle value
 return arr.indexof(middle)*/
+
+
+/*function gimme (inputArray) {
+  let ordArr = inputArray.concat().sort((a,b)=> a-b) 
+  let middle = ordArr[1] 
+  return inputArray.indexOf(middle)
+};*/
+
+
+//FINAL CODE
+var gimme = function (inputArray) {
+  return inputArray.indexOf(inputArray.concat().sort((a,b)=> a-b)[1])
+};
