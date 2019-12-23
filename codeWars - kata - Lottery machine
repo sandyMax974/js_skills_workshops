@@ -5,10 +5,24 @@ lottery(str); // should return "865"
 var str = "ynMAisVpHEqpqHBqTrwH";
 lottery(str); // should return "One more run!"*/
 
-
+//SUDOCODE
 str.slice('')
 iterate through array with 'for' loop
 check 'typeOf' each value in array
 if i = number then push i in new array 
 else return "One more run!"
 new array join()
+
+
+//DRAFT NOT FUCTIONAL CODE
+function lottery(str){
+//let a = str.split('')
+//console.log(a)
+for (let i = 0; i < str.length; i++){
+  if (typeof str[i] === 'number'){
+    let b = b.push(str[i])
+  } else {
+    return "One more run!"
+    }
+  } return b.join('')
+}
