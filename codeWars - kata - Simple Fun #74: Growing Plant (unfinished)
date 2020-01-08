@@ -4,3 +4,14 @@ function addition (upS, downS,desiredH) {
     treeH += (upS - downS)
   } return treeH
 }
+
+//OR
+
+function addition (upS, downS,desiredH) {
+  let treeH = 0;
+  let count = 0;
+  while (treeH < desiredH){
+    treeH += (upS - downS)
+    count++;
+  } console.log(count);
+} 
