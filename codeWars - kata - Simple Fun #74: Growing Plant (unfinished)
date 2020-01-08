@@ -1,11 +1,6 @@
-
-
-function addition (upS, downS, desiredH) {
-  var treeH = 0;
-  do {
-    treeH += upS -= downS 
-  } while (treeH === desiredH);
-console.log(treeH)
+function addition (upS, downS,desiredH) {
+  let treeH = 0;
+  while (treeH < desiredH){
+    treeH += (upS - downS)
+  } return treeH
 }
-
-addition(10, 2, 50)
