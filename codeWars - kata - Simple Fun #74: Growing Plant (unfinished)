@@ -15,3 +15,5 @@ function addition (upS, downS,desiredH) {
     count++;
   } console.log(count);
 } 
+
+//need to break before deducting 'downSpeed' if condition is met
