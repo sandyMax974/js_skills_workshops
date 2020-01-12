@@ -1,18 +1,20 @@
 //loops through array and % by divisor
 //if result is 0 then push to result array
 
-//First draft
+//WORKING CODE
 function divisibleBy(numbers, divisor){
-  let result = numbers.filter(() => {
-    numbers[i] % divisor == 0 
-    } 
-  }
+  let result = [];
+  for (let i = 0; i < numbers.length; i++){
+  if (numbers[i] % divisor == 0) {
+    result.push(numbers[i])
+    }
+  } 
+  return result
 }
 
-
-//Second draft
+//USING .filter()
 function divisibleBy(numbers, divisor){
-  const result = numbers.filter (num => {num % divisor === 0
+  const result = numbers.filter (num => {num % divisor == 0
   });
   return result;
 }
