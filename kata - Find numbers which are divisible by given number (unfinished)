@@ -1,11 +1,20 @@
 //loops through array and % by divisor
 //if result is 0 then push to result array
 
+//First draft
 function divisibleBy(numbers, divisor){
   let result = numbers.filter(() => {
     numbers[i] % divisor == 0 
     } 
   }
+}
+
+
+//Second draft
+function divisibleBy(numbers, divisor){
+  const result = numbers.filter (num => {num % divisor === 0
+  });
+  return result;
 }
 
 divisibleBy([1,2,3,4,5,6], 2)
