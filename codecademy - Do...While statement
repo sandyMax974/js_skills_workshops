@@ -1,8 +1,0 @@
-var cupsOfSugarNeeded = 3;
-var cupsAdded = 0;
-
-do {
-  cupsAdded = cupsAdded + 1;
-} while (cupsAdded < cupsOfSugarNeeded);
-
-console.log(cupsAdded);
