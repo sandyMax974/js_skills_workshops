@@ -1,0 +1,22 @@
+//In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number
+//Example:
+// highAndLow("1 2 3 4 5"); return "5 1"
+
+
+function highAndLow(numbers){
+  let final = []
+  let arr = numbers.split(' ');
+  let seq = arr.sort((a,b) => {return a - b})
+  final.push(seq[seq.length-1]);
+  final.push(seq[0]);
+  let result = final.join(' ');
+  return result;
+}
+
+
+//Refactor
+
+function highAndLow(numbers){
+  let arr = numbers.split(' ').sort((a,b) => {return a - b})
+  return new Array(arr[arr.length-1],arr[0]).join(' ')
+}
